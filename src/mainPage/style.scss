@@ -1,0 +1,262 @@
+.main-div {
+  background-color: black;
+  .image-div {
+    display: flex;
+    justify-content: flex-end;
+    .web-img {
+      height: 100vh;
+    }
+  }
+  .content-main-div {
+    display: flex;
+    align-items: center;
+    .content-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 70%;
+      width: 100%;
+      .heading {
+        color: white;
+        font-family: "ClashDisplayBold";
+        font-size: 5vw;
+        .polygon {
+          width: 40px;
+          height: 40px;
+          margin-left: 20px;
+        }
+      }
+      .logos-main-div{
+        display: flex;
+        width: 100%;
+        .logo1-main-div {
+          width: 20%;
+          .logo1-div {
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .icons-div {
+              display: flex;
+              .heart-icon {
+                width: 40px;
+                height: 35px;
+              }
+              .figma-icon {
+                width: 30px;
+                height: 35px;
+              }
+            }
+            .logo1-text {
+              color: white;
+              font-family: "WorkSansSemiBold";
+              font-size: 12px;
+            }
+          }
+        }
+  
+        .logo2-main-div {
+          width: 50%;
+          border-left: 1px solid white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .logo2-div {
+            background-color: white;
+            width: 225px;
+            height: 80px;
+            border-radius: 64px;
+            display: flex;
+            align-items: center;
+            .icons-div {
+              display: flex;
+              align-items: center;
+              margin-left: 8px;
+              margin-right: 11px;
+              .icons-bg {
+                width: 70px;
+                height: 70px;
+                border: 2px solid white;
+                border-radius: 50%;
+                background-image: linear-gradient(
+                  160deg,
+                  #000000,
+                  #001026,
+                  #0163ea
+                );
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 5px 5px 5px #888888;
+                .icons {
+                  height: 20px;
+                }
+              }
+            }
+            .text-div {
+              position: relative;
+              display: flex;
+              align-items: flex-end;
+              height: inherit;
+              h3 {
+                font-family: "ُPoppinsSemiBold";
+                margin: 0px;
+              }
+  
+              p {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                font-family: "PoppinsLight";
+                line-height: 12px;
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+     
+    }
+  }
+}
+/* CSS rules for screens smaller than 1024px */
+@media screen and (max-width: 1025px) {
+  .logos-main-div{
+    .logo1-main-div {
+      width: 20%;
+      .logo1-div {
+        width: 80px !important;
+        height: 80px !important;
+  
+        .icons-div {
+          .heart-icon {
+            width: 25px !important;
+            height: 20px !important;
+          }
+          .figma-icon {
+            width: 20px !important;
+            height: 25px !important;
+          }
+        }
+        .logo1-text {
+          font-size: 10px !important;
+        }
+      }
+    }
+  
+    .logo2-main-div {
+      width: 70%;
+      .logo2-div {
+        width: 180px !important;
+        height: 70px !important;
+  
+        .icons-div {
+          margin-left: 5px !important;
+          margin-right: 8px !important;
+          .icons-bg {
+            width: 60px !important;
+            height: 60px !important;
+  
+            .icons {
+              height: 15px !important;
+            }
+          }
+        }
+        .text-div {
+          h3 {
+            font-size: 24px !important;
+          }
+  
+          p {
+            line-height: 9px !important;
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media screen and (max-width: 769px)  {
+  .image-div {
+    .web-img {
+      width: 100% !important;
+    }
+  }
+  .polygon {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .logos-main-div{
+    .logo1-main-div {
+
+      .logo1-div {
+        width: 60px !important;
+        height: 60px !important;
+  
+        .icons-div {
+          .heart-icon {
+            width: 25px !important;
+            height: 20px !important;
+          }
+          .figma-icon {
+            width: 15px !important;
+            height: 20px !important;
+          }
+        }
+        .logo1-text {
+          font-size: 8px !important;
+        }
+      }
+    }
+    .logo2-main-div {
+      .logo2-div {
+        width: 150px !important;
+        height: 50px !important;
+  
+        .icons-div {
+          margin-left: 3px !important;
+          margin-right: 5px !important;
+          .icons-bg {
+            width: 40px !important;
+            height: 40px !important;
+  
+            .icons {
+              height: 12px !important;
+            }
+          }
+        }
+        .text-div {
+          h3 {
+            font-size: 18px !important;
+          }
+  
+          p {
+            line-height: 10px !important;
+            font-size: 8px !important;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+ 
+}
+@media screen and (max-width: 426px) {
+  .main-div {
+    height: 100vh !important;
+    .web-img {
+      height: 60vh !important;
+    }
+    .heading {
+      text-align: center !important;
+    }
+    .logos-main-div{
+      justify-content: center;
+    }
+  }
+}
